@@ -2,7 +2,7 @@
 
 A public repository to reproduce data processing and analysis for Mallm, Iskar, Ishaque et. al. 2018
 
-Author: Naveed Ishaque (n.ishaqaue@dkfz.de)
+Contact: cancerepisys@dkfz.de
 
 Citation: Linking aberrant chromatin features in chronic lymphocytic leukemia to deregulated transcription factor networks. Jan-Philipp Mallm, Murat Iskar, Naveed Ishaque et al.
 
