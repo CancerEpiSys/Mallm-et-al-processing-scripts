@@ -1,0 +1,40 @@
+#
+
+Author: Naveed Ishaque (n.ishaqaue@dkfz.de)
+
+Citation: Linking aberrant chromatin features in chronic lymphocytic leukemia to deregulated transcription factor networks. Jan-Philipp Mallm, Murat Iskar, Naveed Ishaque et al.
+
+############################################
+
+Copyright 2018 DKFZ, Karsten Rippe, Daniel Mertens, Roland Eils, Naveed Ishaque
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+#############################################
+
+README for scripts to reproduce chromatin transition analysis, which shows the average transitions from the samples in the "A" file to the "B" file.
+
+Pre-requisite: the ChromHMM input has to be segmented into 200bp windows. Example code to do this:
+
+	# step 1 - download a hg19 chromosome size file
+	wget https://github.com/arq5x/bedtools/blob/master/genomes/human.hg19.genome
+	# step 2 - create a bed file of 200bp windows
+	bedtools makewindows -g hg19.genome -w 200 > hg19.200.bed
+	# intersect the 12 state chromatin segmentation for a sample with the 200bp segmented genome, creating a per 200bp state annotation
+	intersectBed -a MySample_ChromHMM_12_state_segmentaion.bed -b hg19.200.bed |  > MySample_ChromHMM_12_state_segmentaion.200bp.bed
+	# extract only the state column per 200bp, and remove the "E" prefix to the state number
+	cut -f 4 MySample_ChromHMM_12_state_segmentaion.200bp.bed | sed 's|E||' > MySample_ChromHMM_12_state_segmentaion.200bp.state.txt
+
+Required inputs are:
+	- "A file", file with list of 200bp window segmented chromatin states. For this study the A file contain the healthy samples.
+	- "B file", file with list of 200bp window segmented chromatin states. For this study the B file contain the malignant samples.
+
+USAGE
+	- perl compare_chromatin_200.pl [A file (text list of files)] [B file (text list of files)]
+
+NOTES
+	- example A and B files of ones used for the study are provided: compare_chromatin_200.A.WT.list, compare_chromatin_200.B.MT.list

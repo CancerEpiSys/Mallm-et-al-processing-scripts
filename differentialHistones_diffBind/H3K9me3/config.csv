@@ -1,0 +1,16 @@
+SampleID,Tissue,Factor,Condition,Replicate,bamReads,bamControl,Peaks
+CES_DT,blood,H3K9me3,WT,1,CES_DT_H3K9me3.sorted.bam,CES_DT_H3.sorted.bam,CES_DT_H3K9me3_macs_peaks.raw.bed
+CES_EM,blood,H3K9me3,WT,1,CES_EM_H3K9me3.sorted.bam,CES_EM_H3.sorted.bam,CES_EM_H3K9me3_macs_peaks.raw.bed
+CES_GN,blood,H3K9me3,WT,1,CES_GN_H3K9me3.sorted.bam,CES_GN_H3.sorted.bam,CES_GN_H3K9me3_macs_peaks.raw.bed
+CES_MA,blood,H3K9me3,WT,1,CES_MA_H3K9me3.sorted.bam,CES_MA_H3.sorted.bam,CES_MA_H3K9me3_macs_peaks.raw.bed
+CES_YF,blood,H3K9me3,WT,1,CES_YF_H3K9me3.sorted.bam,CES_YF_H3.sorted.bam,CES_YF_H3K9me3_macs_peaks.raw.bed
+CES_FG,blood,H3K9me3,MT,1,CES_FG_H3K9me3.sorted.bam,CES_FG_H3.sorted.bam,CES_FG_H3K9me3_macs_peaks.raw.bed
+CES_IO,blood,H3K9me3,MT,1,CES_IO_H3K9me3.sorted.bam,CES_IO_H3.sorted.bam,CES_IO_H3K9me3_macs_peaks.raw.bed
+CES_KL,blood,H3K9me3,MT,1,CES_KL_H3K9me3.sorted.bam,CES_KL_H3.sorted.bam,CES_KL_H3K9me3_macs_peaks.raw.bed
+CES_PP,blood,H3K9me3,MT,1,CES_PP_H3K9me3.sorted.bam,CES_PP_H3.sorted.bam,CES_PP_H3K9me3_macs_peaks.raw.bed
+CES_QU,blood,H3K9me3,MT,1,CES_QU_H3K9me3.sorted.bam,CES_QU_H3.sorted.bam,CES_QU_H3K9me3_macs_peaks.raw.bed
+CES_RC,blood,H3K9me3,MT,1,CES_RC_H3K9me3.sorted.bam,CES_RC_H3.sorted.bam,CES_RC_H3K9me3_macs_peaks.raw.bed
+CES_TH,blood,H3K9me3,MT,1,CES_TH_H3K9me3.sorted.bam,CES_TH_H3.sorted.bam,CES_TH_H3K9me3_macs_peaks.raw.bed
+CES_WW,blood,H3K9me3,MT,1,CES_WW_H3K9me3.sorted.bam,CES_WW_H3.sorted.bam,CES_WW_H3K9me3_macs_peaks.raw.bed
+CES_XP,blood,H3K9me3,MT,1,CES_XP_H3K9me3.sorted.bam,CES_XP_H3.sorted.bam,CES_XP_H3K9me3_macs_peaks.raw.bed
+CES_ZV,blood,H3K9me3,MT,1,CES_ZV_H3K9me3.sorted.bam,CES_ZV_H3.sorted.bam,CES_ZV_H3K9me3_macs_peaks.raw.bed

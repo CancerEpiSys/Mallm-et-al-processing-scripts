@@ -1,0 +1,7 @@
+SampleID,Tissue,Factor,Condition,Replicate,bamReads,bamControl,Peaks
+CES_LM_24t,CES_LM,H3K27ac,MT_24T,1,CES_LM_H3K27ac_24ht.bam,CES_LM_H3_24ht.bam,CES_LM_H3K27ac_24ht_macs_peaks.raw.bed
+CES_JK_24t,CES_JK,H3K27ac,MT_24T,1,CES_JK_H3K27ac_24ht.bam,CES_JK_H3_24ht.bam,CES_JK_H3K27ac_24ht_macs_peaks.raw.bed
+CES_HA_24t,CES_HA,H3K27ac,MT_24T,1,CES_HA_H3K27ac_24ht.bam,CES_HA_H3_24ht.bam,CES_HA_H3K27ac_24ht_macs_peaks.raw.bed
+CES_LM_24c,CES_LM,H3K27ac,MT_24C,1,CES_LM_H3K27ac.bam,CES_LM_H3.bam,CES_LM_H3K27ac_24hc_macs_peaks.raw.bed
+CES_JK_24c,CES_JK,H3K27ac,MT_24C,1,CES_JK_H3K27ac.bam,CES_JK_H3.bam,CES_JK_H3K27ac_24hc_macs_peaks.raw.bed
+CES_HA_24c,CES_HA,H3K27ac,MT_24C,1,CES_HA_H3K27ac.bam,CES_HA_H3.bam,CES_HA_H3K27ac_24hc_macs_peaks.raw.bed
